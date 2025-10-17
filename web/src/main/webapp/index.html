@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link
+          rel="stylesheet"
+          as="style"
+          onload="this.rel='stylesheet'"
+          href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+  />
+
+  <title>Auto Bid | Ford Mustang</title>
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body>
+<form action="bid" method="post">
+
+<div class="relative flex size-full min-h-screen flex-col bg-[#111418] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+  <div class="layout-container flex h-full grow flex-col">
+    <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#293038] px-10 py-3">
+      <div class="flex items-center gap-8">
+        <div class="flex items-center gap-4 text-white">
+          <div class="size-4">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_6_330)">
+                <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
+                        fill="currentColor"
+                ></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_330"><rect width="48" height="48" fill="white"></rect></clipPath>
+              </defs>
+            </svg>
+          </div>
+          <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">AutoBid</h2>
+        </div>
+        <div class="flex items-center gap-9">
+          <a class="text-white text-sm font-medium leading-normal" href="#">Home</a>
+          <a class="text-white text-sm font-medium leading-normal" href="#">Auctions</a>
+          <a class="text-white text-sm font-medium leading-normal" href="#">Sell</a>
+          <a class="text-white text-sm font-medium leading-normal" href="#">My Garage</a>
+        </div>
+      </div>
+      <div class="flex flex-1 justify-end gap-8">
+        <label class="flex flex-col min-w-40 !h-10 max-w-64">
+          <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+            <div
+                    class="text-[#9daab8] flex border-none bg-[#293038] items-center justify-center pl-4 rounded-l-lg border-r-0"
+                    data-icon="MagnifyingGlass"
+                    data-size="24px"
+                    data-weight="regular"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                        d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                ></path>
+              </svg>
+            </div>
+            <input
+                    placeholder="Search"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border-none bg-[#293038] focus:border-none h-full placeholder:text-[#9daab8] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                    value=""
+            />
+          </div>
+        </label>
+        <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#293038] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+        >
+          <div class="text-white" data-icon="Bell" data-size="20px" data-weight="regular">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                      d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
+              ></path>
+            </svg>
+          </div>
+        </button>
+        <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAfSdrFOSI3i4_CwnznBub7g5LYJkujk5HxHXDM76O9c2i_Oy7Owd-T_AHuGnFG2LO06v_Z7-cN4fjxrhJjEkqABGIJk-NgojQGD1LkDRgxntaD6T41R14gdDhkH-8hHgHFrnB_6czrTDa2L-8TA1azxQUpNizmTjNyaqa6Bfux2qaL7TVwcgu5aa4nN0P0ojOzBl-CehtkFRmw9r7TCIE2OqK22aOEb5VLG9KyOLgEpH0oPrwroOtOG5743su4yXSYh0UNdam5dGlb");'
+        ></div>
+      </div>
+    </header>
+    <div class="px-40 flex flex-1 justify-center py-5">
+      <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+        <div class="flex flex-wrap gap-2 p-4">
+          <a class="text-[#9daab8] text-base font-medium leading-normal" href="#">Auctions</a>
+          <span class="text-[#9daab8] text-base font-medium leading-normal">/</span>
+          <a class="text-[#9daab8] text-base font-medium leading-normal" href="#">Sports Cars</a>
+          <span class="text-[#9daab8] text-base font-medium leading-normal">/</span>
+          <span class="text-white text-base font-medium leading-normal">1967 Ford Mustang</span>
+        </div>
+        <div class="flex flex-wrap justify-between gap-3 p-4">
+          <div class="flex min-w-72 flex-col gap-3">
+            <p class="text-white tracking-light text-[32px] font-bold leading-tight">1967 Ford Mustang</p>
+            <p id="countdown" class="text-[#9daab8] text-sm font-normal leading-normal">Lot #12345 • Ends in 2 days</p>
+          </div>
+        </div>
+        <div class="flex w-full grow bg-[#111418] @container p-4">
+          <div class="w-full gap-1 overflow-hidden bg-[#111418] @[480px]:gap-2 aspect-[3/2] rounded-lg grid grid-cols-[2fr_1fr_1fr]">
+            <div
+                    class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none row-span-2"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCC3kJCsvScHGwM7AIYXdqctL9ExDU2R8QX16RFbFXCWARcJAgyoIy5E3conMqiPUceKdLd4vgY6WsgcJFfTDWOONQnnLoGRsuGmXxV2n3i3gDE7C4jUsqPnilF6xQWVfMdMPnSsk5IwA0smT_YU4Iv0ekag2H4Lm4S1TdbAb0XvHLDZG7i3T8VH6b-0p9aDcDWWqOq2ChnBIOS8RCUYer0hPvcoSsAyfBqr8vAoPMiAP5X0qGnMEboE57Rt0iLsY0bTaGfCYtvpb_-");'
+            ></div>
+            <div
+                    class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBGyek53FZv1xd5IrhOOgLxUftX03QLR6fYe2XTw85i3b2aU_LLKbaRnuEvNpGSgnCYzzkSXTdiVSklDwsxwxnczVcyM4kX23iMdQ5_CyPQRF4KViIzoWc29qU0XdcFFiOQkct-7ulBzODI-96lCA7zDF3wckbAIAwnGEmjuOfPE55zTKXoSDrA8qY66oGGIfBBU0xXW2koAyMjbB_6YxTxo5vGpYV6Sz-HfELxDgYaSPwvQ70UNYtgKuhlE1vbdJMgCa-IdlVyJShA");'
+            ></div>
+            <div
+                    class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCInrNMj_MCYS24nWX4MMYf32Z80dnt7WjXVGHhqd9MsBKzsKZkC6Z988yFQm-4lqiu24SsvAGp1ignsjfK7cG0QkQexohqlzniUznEsJ56qGPKr8pSO1mpo7SJziWxhDndhm5QwPI7TbQY9yv5_BVLrRgvJR6kCV-osIKTlw7PahHyUDtjHqWdQ5mmD_tUedsi0TXNKHg1FMbK5D-jz0JeM6N82064omC4bA01pJ9Aq4Vk0bD3g_mqs9lbi10lr_LAsTcIybh49_yz");'
+            ></div>
+            <div
+                    class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none"
+
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_fm5mWWMnkObNie84FHsRv6QGHFiPq4DwQdDrh_v2EEDRs8_khSOqs76IKOl-e3UDYapaTJ2RufOGYAiS8u5O8qFEveWKM2CsQzZED74SZj8jqKVqKiufIbJPP2ZW3-Ho1kfVabCZnI5d__alWMWM1g6gs5wjkTTNw-gsAd0vyHLC29gYfXl4owvLfRH-2mxoU47R3COtwNc0p_Jk2KgDp7Kwez5oPlxW4K41YKBTCNJdOutlq9u53lRM-Xa_3OsxeZ-IFPzkGyLT");'
+            ></div>
+          <div
+                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDgecVHO64lGOdDqNRYr3aZP7hKQJ6mcafqjQpD2jZFvglP-VdsaX54QWFtPABkf3eQO8XiDxHEMCfkbh7v7jrUu9P9gNihQaf1Bi5ocETY_VEZ9nrYGH8FAl9u7qw1wEM6KIfdI52kgLpCZjV-MayaPqlg8Fj3ABXtxUkiP11raI3iqtkwKBuOXn6Q79w3Jebx8jTXEre_U-tHAxoQB3aEwm5D7YeihefcI9lIWkMVGKXDGkU-IrI8KBwrqS3dgtf1CXfDuwNNG79z");'
+          ></div>
+        </div>
+      </div>
+      <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Vehicle Details</h2>
+      <div class="p-4 grid grid-cols-2">
+        <div class="flex flex-col gap-1 border-t border-solid border-t-[#3c4753] py-4 pr-2">
+          <p class="text-[#9daab8] text-sm font-normal leading-normal">Year</p>
+          <p class="text-white text-sm font-normal leading-normal">1967</p>
+        </div>
+        <div class="flex flex-col gap-1 border-t border-solid border-t-[#3c4753] py-4 pl-2">
+          <p class="text-[#9daab8] text-sm font-normal leading-normal">Make</p>
+          <p class="text-white text-sm font-normal leading-normal">Ford</p>
+        </div>
+        <div class="flex flex-col gap-1 border-t border-solid border-t-[#3c4753] py-4 pr-2">
+          <p class="text-[#9daab8] text-sm font-normal leading-normal">Model</p>
+          <p class="text-white text-sm font-normal leading-normal">Mustang</p>
+        </div>
+        <div class="flex flex-col gap-1 border-t border-solid border-t-[#3c4753] py-4 pl-2">
+          <p class="text-[#9daab8] text-sm font-normal leading-normal">VIN</p>
+          <p class="text-white text-sm font-normal leading-normal">1234567890ABCDEFG</p>
+        </div>
+        <div class="flex flex-col gap-1 border-t border-solid border-t-[#3c4753] py-4 pr-2">
+          <p class="text-[#9daab8] text-sm font-normal leading-normal">Mileage</p>
+          <p class="text-white text-sm font-normal leading-normal">55,000 miles</p>
+        </div>
+        <div class="flex flex-col gap-1 border-t border-solid border-t-[#3c4753] py-4 pl-2">
+          <p class="text-[#9daab8] text-sm font-normal leading-normal">Exterior Color</p>
+          <p class="text-white text-sm font-normal leading-normal">Red</p>
+        </div>
+        <div class="flex flex-col gap-1 border-t border-solid border-t-[#3c4753] py-4 pr-2">
+          <p class="text-[#9daab8] text-sm font-normal leading-normal">Interior Color</p>
+          <p class="text-white text-sm font-normal leading-normal">Black</p>
+        </div>
+        <div class="flex flex-col gap-1 border-t border-solid border-t-[#3c4753] py-4 pl-2">
+          <p class="text-[#9daab8] text-sm font-normal leading-normal">Engine</p>
+          <p class="text-white text-sm font-normal leading-normal">289ci V8</p>
+        </div>
+        <div class="flex flex-col gap-1 border-t border-solid border-t-[#3c4753] py-4 pr-2">
+          <p class="text-[#9daab8] text-sm font-normal leading-normal">Transmission</p>
+          <p class="text-white text-sm font-normal leading-normal">Automatic</p>
+        </div>
+        <div class="flex flex-col gap-1 border-t border-solid border-t-[#3c4753] py-4 pl-2">
+          <p class="text-[#9daab8] text-sm font-normal leading-normal">Drivetrain</p>
+          <p class="text-white text-sm font-normal leading-normal">Rear-Wheel Drive</p>
+        </div>
+
+        <div class="flex flex-col gap-1 border-t border-solid border-t-[#3c4753] py-4 pr-2 col-span-2 pr-[50%]">
+          <p class="text-[#9daab8] text-sm font-normal leading-normal">Title Status</p>
+          <p class="text-white text-sm font-normal leading-normal">Clean</p>
+        </div>
+      </div>
+
+      <div class="px-4 py-3 @container">
+        <div class="flex overflow-hidden rounded-lg border border-[#3c4753] bg-[#111418]">
+
+        </div>
+        <style>
+          @container(max-width:120px){.table-df2c74c0-a4f4-4e0c-9dce-eeb6cae3f554-column-120{display: none;}}
+          @container(max-width:240px){.table-df2c74c0-a4f4-4e0c-9dce-eeb6cae3f554-column-240{display: none;}}
+          @container(max-width:360px){.table-df2c74c0-a4f4-4e0c-9dce-eeb6cae3f554-column-360{display: none;}}
+        </style>
+      </div>
+      <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Place Your Bid</h2>
+      <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+        <label class="flex flex-col min-w-40 flex-1">
+          <p class="text-white text-base font-medium leading-normal pb-2">Bid Amount</p>
+          <input
+                  placeholder="$25,500"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-[#3c4753] bg-[#1c2126] focus:border-[#3c4753] h-14 placeholder:text-[#9daab8] p-[15px] text-base font-normal leading-normal"
+                  value=""
+                  type="text"
+                  name="bid"
+          />
+        </label>
+        <label class="flex flex-col min-w-40 flex-1">
+          <p class="text-white text-base font-medium leading-normal pb-2">Max Bid Amount</p>
+          <input
+                  placeholder="$25,500"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-[#3c4753] bg-[#1c2126] focus:border-[#3c4753] h-14 placeholder:text-[#9daab8] p-[15px] text-base font-normal leading-normal"
+                  value=""
+                  type="text"
+                  name="max-bid"
+          />
+        </label>
+        <div id="live-bid" style="color: #00ff99; margin-top: 10px;">
+          Current Highest Bid: Loading...
+        </div>
+      </div>
+
+      <div class="flex px-4 py-3 justify-end">
+        <button  id="placeBidBtn"
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#1978e5] text-white text-sm font-bold leading-normal tracking-[0.015em]" type="submit"
+        >
+          <span class="truncate">Place Bid</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+ </form>
+
+
+
+<script>
+
+  const auctionDurationMinutes = 1;
+  const auctionEndTime = new Date().getTime() + auctionDurationMinutes * 60 * 1000;
+
+  const placeBidBtn = document.getElementById('placeBidBtn');
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = auctionEndTime - now;
+
+    if (distance < 0) {
+      document.getElementById('countdown').innerText = "Auction has ended!";
+      placeBidBtn.disabled = true;  // disable the button
+      clearInterval(timer);
+      return;
+    }
+
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById('countdown').innerText =
+            `Time remaining: ${seconds}s`;
+  }
+
+  // Update countdown every second
+  updateCountdown(); // initial call
+  const timer = setInterval(updateCountdown, 1000);
+
+  async function fetchLiveBid() {
+    try {
+      // Use relative URL to avoid URL encoding issues
+      const response = await fetch('live-bid');
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      document.getElementById('live-bid').textContent =
+              `Current Highest Bid: $${Number(data.amount).toLocaleString()}`;
+    } catch (err) {
+      console.error("Error fetching bid:", err);
+      document.getElementById('live-bid').textContent = 'Current Highest Bid: Error loading';
+    }
+  }
+
+  // Poll every 3 seconds
+  setInterval(fetchLiveBid, 3000);
+  fetchLiveBid();
+</script>
+
+</body>
+</html>
